@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+    />
+
+    <title>My Projects</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#1a1a1a] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#363636] px-10 py-3">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Ishaan Dandekar</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="/">About</a>
+              <a class="text-white text-sm font-medium leading-normal" href="/skills">Skills</a>
+              <a class="text-white text-sm font-medium leading-normal" href="/resume">Resume</a>
+            </div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-white tracking-light text-[32px] font-bold leading-tight">Featured Projects</p>
+                <p class="text-[#adadad] text-sm font-normal leading-normal">A selection of projects showcasing my skills and interests in computer engineering.</p>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-[0_0_4px_rgba(0,0,0,0.1)] bg-neutral-800">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD-lYu_qJWjZWlSgZn3gAIj7CogkGgDCQeKzugUhxIrQxFoz06okL8KKp78rYG49COC4a4V53N-neqQC9XSvfxdw2mekGu-IF6XTDhxwF9XfPgkbQzjBKMi05coL-Yq1xMa-xAqkzjyl0QiLvHjfLpxHOE5rLd5mhxewRi9O6wOYLg8Kj_wm6blLE-ZzyKLjWqdm8Em43WubUn59t6ciP60g2VOYLFjHHOwhzH1qSeTmcJ8z7kxVEj6_oGgJIQFLdcRgaQzYmufrYL7");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4 px-4">
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Smart Home Automation System</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <div class="flex flex-col gap-1">
+                      <p class="text-[#adadad] text-base font-normal leading-normal">
+                        Developed a system to control home appliances remotely using a mobile app and IoT devices. Implemented features like scheduling, voice control, and energy
+                        monitoring.
+                      </p>
+                      <p class="text-[#adadad] text-base font-normal leading-normal">Technologies: Python, Raspberry Pi, MQTT, Flask</p>
+                    </div>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-black text-white text-sm font-medium leading-normal"
+                    >
+                      <span class="truncate">View Project</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-[0_0_4px_rgba(0,0,0,0.1)] bg-neutral-800">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDImvbuI7kwNDqi_8l6oixgBSL2fZ-JUw7jZf8JsVIo7YAQxTpVu62C4KSBtw3C-CAUQjtU6-C0TmIuzk0q9XBBynxrM7vGYvM6xVtXg5jugkDExuKnPIALYljxtAHD-IcN-4sfJXMXY4K3H0qXQ2BdiCfBC0Hnb7MBK0yYiIPkIY2NkpPU5Kh0NixKpWLq3s9ReUu4E2v8A39odylSGA-9pYE7KhaEjtqzs_ofYSPphOJOGwvkLFBACRJK5paLo5t6z1ONJwgh3OJW");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4 px-4">
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">E-commerce Website for Local Artisans</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <div class="flex flex-col gap-1">
+                      <p class="text-[#adadad] text-base font-normal leading-normal">
+                        Built a platform for local artisans to sell their products online. Features include product catalog, shopping cart, payment gateway integration, and user
+                        authentication.
+                      </p>
+                      <p class="text-[#adadad] text-base font-normal leading-normal">Technologies: React, Node.js, Express, MongoDB</p>
+                    </div>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-black text-white text-sm font-medium leading-normal"
+                    >
+                      <span class="truncate">View Project</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-[0_0_4px_rgba(0,0,0,0.1)] bg-neutral-800">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB04b9FyABlfyFdVCscWPeCZ0XHsdP69V9EK1btVC_p2EQrGvPX-jb-r1M-05G4KHyRvnKiBP3-zP9ApePIF-ceqoSFy1F5Gdzi-jP_9_ksa09GDp-R_9OAfBg28U_kYt5_YMRNmY6vaZHCB9j-C_GCcjVoAXmiHleaxo_sxRkyFtBVT5YvHHi7cW_YRtMh2qIvKBoDTB83U1QeYDtJAFgvPWnmEMehIHUUH0LlBqLJ-dOezBPWIRePNCDBCPifIF9FrBhvsX6ra2lQ");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4 px-4">
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Machine Learning-Based Image Classifier</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <div class="flex flex-col gap-1">
+                      <p class="text-[#adadad] text-base font-normal leading-normal">
+                        Created an image classification model using a convolutional neural network (CNN). Trained the model on a dataset of various objects and achieved high
+                        accuracy.
+                      </p>
+                      <p class="text-[#adadad] text-base font-normal leading-normal">Technologies: Python, TensorFlow, Keras, OpenCV</p>
+                    </div>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-black text-white text-sm font-medium leading-normal"
+                    >
+                      <span class="truncate">View Project</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
