@@ -1,54 +1,30 @@
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
-    />
-
-    <title>My Projects</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-[#1a1a1a] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#363636] px-10 py-3">
-          <div class="flex items-center gap-4 text-white">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Ishaan Dandekar</h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-white text-sm font-medium leading-normal" href="/">About</a>
-              <a class="text-white text-sm font-medium leading-normal" href="/skills/">Skills</a>
-              <a class="text-white text-sm font-medium leading-normal" href="/resume/">Resume</a>
-            </div>
-          </div>
-        </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex flex-wrap justify-between gap-3 p-4">
-              <div class="flex min-w-72 flex-col gap-3">
-                <p class="text-white tracking-light text-[32px] font-bold leading-tight">Featured Projects</p>
-                <!-- <p class="text-[#adadad] text-sm font-normal leading-normal">A selection of projects showcasing my skills and interests in computer engineering.</p> -->
-                <p class="text-[#adadad] text-sm font-normal leading-normal">Future Projects will be showcased here.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Ishaan Dandekar</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <nav>
+    <h1>Ishaan Dandekar</h1>
+    <ul>
+      <li><a href="/">About</a></li>
+      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/resume/">Resume</a></li>
+      <li><a href="/skills/">Skills</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Projects</h2>
+    <p>A few cool things I've built recently:</p>
+    <ul class="tool-list">
+      <li>Portfolio Website</li>
+      <li>Blog Platform (Node.js)</li>
+      <li>To-do App (React)</li>
+      <li>Chat App (Socket.io)</li>
+    </ul>
+  </main>
+</body>
 </html>
-
