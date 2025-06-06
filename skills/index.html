@@ -2,84 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My Skills</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;700&display=swap"
-    />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <title>Skills</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#1a1a1a] text-white font-sans" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+  <body class="bg-[#0e0e0e] text-white font-sans px-10 py-8">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center mb-12">
+      <h1 class="text-2xl font-bold">My Portfolio</h1>
+      <ul class="flex gap-6 text-lg">
+        <li><a href="#" class="hover:text-gray-400 transition-colors">Home</a></li>
+        <li><a href="#" class="hover:text-gray-400 transition-colors">Projects</a></li>
+        <li><a href="#" class="hover:text-gray-400 transition-colors">Skills</a></li>
+        <li><a href="#" class="hover:text-gray-400 transition-colors">Contact</a></li>
+      </ul>
+    </nav>
 
-    <!-- ✅ NAVBAR -->
-    <header class="bg-[#111] border-b border-[#2a2a2a]">
-      <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <div class="text-xl font-bold tracking-wide">My Portfolio</div>
-        <nav class="space-x-6 text-sm">
-          <a href="#" class="text-[#adadad] hover:text-white transition">Home</a>
-          <a href="#" class="text-[#adadad] hover:text-white transition">Projects</a>
-          <a href="#" class="text-[#adadad] hover:text-white transition">Skills</a>
-          <a href="#" class="text-[#adadad] hover:text-white transition">Contact</a>
-        </nav>
+    <!-- Skills Section -->
+    <section>
+      <h2 class="text-4xl font-bold mb-2">Skills</h2>
+      <p class="text-gray-400 mb-10">A summary of my technical skills and tools I use.</p>
+
+      <!-- Skill Group -->
+      <div class="mb-8">
+        <h3 class="text-2xl font-semibold mb-4">Frontend</h3>
+        <ul class="flex flex-wrap gap-3">
+          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">React</li>
+          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">HTML</li>
+          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">CSS</li>
+          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">JavaScript</li>
+        </ul>
       </div>
-    </header>
 
-    <!-- ✅ SKILLS SECTION -->
-    <main class="max-w-4xl mx-auto px-6 py-10">
-      <h1 class="text-4xl font-bold mb-2">Skills</h1>
-      <p class="text-[#adadad] text-base mb-8">A summary of my technical skills and tools I use.</p>
-
-      <!-- Frontend -->
-      <section class="mb-8">
-        <h2 class="text-xl font-bold mb-3">Frontend</h2>
-        <ul class="flex flex-wrap gap-3 p-1">
-          <li class="pill">React</li>
-          <li class="pill">HTML</li>
-          <li class="pill">CSS</li>
-          <li class="pill">JavaScript</li>
+      <div class="mb-8">
+        <h3 class="text-2xl font-semibold mb-4">Backend</h3>
+        <ul class="flex flex-wrap gap-3">
+          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">Node.js</li>
+          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">Express.js</li>
+          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">MongoDB</li>
         </ul>
-      </section>
+      </div>
 
-      <!-- Backend -->
-      <section class="mb-8">
-        <h2 class="text-xl font-bold mb-3">Backend</h2>
-        <ul class="flex flex-wrap gap-3 p-1">
-          <li class="pill">Node.js</li>
-          <li class="pill">Express.js</li>
-          <li class="pill">MongoDB</li>
+      <div class="mb-8">
+        <h3 class="text-2xl font-semibold mb-4">Tools</h3>
+        <ul class="flex flex-wrap gap-3">
+          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">Git</li>
+          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">VS Code</li>
+          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">Postman</li>
+          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">Figma</li>
+          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">Jira</li>
         </ul>
-      </section>
+      </div>
 
-      <!-- Tools -->
-      <section class="mb-8">
-        <h2 class="text-xl font-bold mb-3">Tools</h2>
-        <ul class="flex flex-wrap gap-3 p-1">
-          <li class="pill">Git</li>
-          <li class="pill">VS Code</li>
-          <li class="pill">Postman</li>
-          <li class="pill">Figma</li>
-          <li class="pill">Jira</li>
+      <div class="mb-8">
+        <h3 class="text-2xl font-semibold mb-4">Languages</h3>
+        <ul class="flex flex-wrap gap-3">
+          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">Python</li>
+          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">C++</li>
+          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">Java</li>
         </ul>
-      </section>
-
-      <!-- Languages -->
-      <section class="mb-8">
-        <h2 class="text-xl font-bold mb-3">Languages</h2>
-        <ul class="flex flex-wrap gap-3 p-1">
-          <li class="pill">Python</li>
-          <li class="pill">C++</li>
-          <li class="pill">Java</li>
-        </ul>
-      </section>
-    </main>
-
-    <!-- ✅ TAILWIND SHORTCUT for pill -->
-    <style>
-      .pill {
-        @apply text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors;
-      }
-    </style>
+      </div>
+    </section>
   </body>
 </html>
