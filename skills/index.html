@@ -1,119 +1,100 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Skills</title>
+    <link rel="icon" href="https://fav.farm/🧠" />
     <link
       rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
     />
-
-    <title>My Skills</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      body {
+        font-family: "Space Grotesk", sans-serif;
+      }
+      ul.skill-list {
+        @apply flex flex-wrap gap-3 p-1;
+      }
+      ul.skill-list li {
+        @apply text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors;
+      }
+    </style>
   </head>
-  <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-[#1a1a1a] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#363636] px-10 py-3">
-          <div class="flex items-center gap-4 text-white">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_6_319)">
-                  <path
-                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
-                    fill="currentColor"
-                  ></path>
-                </g>
-                <defs>
-                  <clipPath id="clip0_6_319"><rect width="48" height="48" fill="white"></rect></clipPath>
-                </defs>
-              </svg>
-            </div>
-            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Ishaan Dandekar</h2>
+  <body class="bg-[#1a1a1a] text-white">
+    <main class="min-h-screen flex flex-col overflow-x-hidden">
+      <header class="flex items-center justify-between border-b border-[#363636] px-6 sm:px-10 py-3">
+        <div class="flex items-center gap-4">
+          <div class="size-4 text-white">
+            <!-- Your logo -->
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" fill="currentColor" /></svg>
           </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-white text-sm font-medium leading-normal" href="/">About</a>
-              <a class="text-white text-sm font-medium leading-normal" href="/projects/">Projects</a>
-              <a class="text-white text-sm font-medium leading-normal" href="/resume/">Resume</a>
-            </div>
-            <div
-              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-              style='background-image: url("https://i.ibb.co/QvxfN1jS/Screenshot-2025-03-30-01-45-39-40-6012fa4d4ddec268fc5c7112cbb265e7.jpg");'
-            ></div>
-          </div>
-        </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex flex-wrap justify-between gap-3 p-4">
-              <div class="flex min-w-72 flex-col gap-3">
-                <p class="text-white tracking-light text-[32px] font-bold leading-tight">Skills</p>
-                <p class="text-[#adadad] text-sm font-normal leading-normal">A summary of my technical skills and tools I use.</p>
-              </div>
-            </div>
-            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Frontend</h3>
-            <div class="flex gap-3 p-3 flex-wrap pr-4">
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#363636] pl-4 pr-4">
-                <p class="text-white text-sm font-medium leading-normal">React</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#363636] pl-4 pr-4">
-                <p class="text-white text-sm font-medium leading-normal">HTML</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#363636] pl-4 pr-4">
-                <p class="text-white text-sm font-medium leading-normal">CSS</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#363636] pl-4 pr-4">
-                <p class="text-white text-sm font-medium leading-normal">JavaScript</p>
-              </div>
-            </div>
-            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Backend</h3>
-            <div class="flex gap-3 p-3 flex-wrap pr-4">
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#363636] pl-4 pr-4">
-                <p class="text-white text-sm font-medium leading-normal">Node.js</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#363636] pl-4 pr-4">
-                <p class="text-white text-sm font-medium leading-normal">Express.js</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#363636] pl-4 pr-4">
-                <p class="text-white text-sm font-medium leading-normal">MongoDB</p>
-              </div>
-            </div>
-            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Tools</h3>
-            <div class="flex gap-3 p-3 flex-wrap pr-4">
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#363636] pl-4 pr-4">
-                <p class="text-white text-sm font-medium leading-normal">Git</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#363636] pl-4 pr-4">
-                <p class="text-white text-sm font-medium leading-normal">VS Code</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#363636] pl-4 pr-4">
-                <p class="text-white text-sm font-medium leading-normal">Postman</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#363636] pl-4 pr-4">
-                <p class="text-white text-sm font-medium leading-normal">Figma</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#363636] pl-4 pr-4">
-                <p class="text-white text-sm font-medium leading-normal">Jira</p>
-              </div>
-            </div>
-            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Languages</h3>
-            <div class="flex gap-3 p-3 flex-wrap pr-4">
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#363636] pl-4 pr-4">
-                <p class="text-white text-sm font-medium leading-normal">Python</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#363636] pl-4 pr-4">
-                <p class="text-white text-sm font-medium leading-normal">C++</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#363636] pl-4 pr-4">
-                <p class="text-white text-sm font-medium leading-normal">Java</p>
-              </div>
-            </div>
-          </div>
+          <h2 class="text-lg font-bold tracking-tight">Ishaan Dandekar</h2>
         </div>
-      </div>
-    </div>
+        <div class="flex items-center gap-6">
+          <nav class="hidden sm:flex gap-6 text-sm font-medium">
+            <a href="/" class="hover:underline">About</a>
+            <a href="/projects/" class="hover:underline">Projects</a>
+            <a href="/resume/" class="hover:underline">Resume</a>
+          </nav>
+          <div
+            class="bg-cover bg-center rounded-full size-10"
+            style='background-image: url("https://i.ibb.co/QvxfN1jS/Screenshot-2025-03-30-01-45-39-40-6012fa4d4ddec268fc5c7112cbb265e7.jpg");'
+          ></div>
+        </div>
+      </header>
+
+      <section class="px-6 sm:px-10 lg:px-40 py-8 flex justify-center">
+        <div class="max-w-[960px] w-full">
+          <div class="mb-6">
+            <p class="text-[32px] font-bold">Skills</p>
+            <p class="text-sm text-[#adadad]">A summary of my technical skills and tools I use.</p>
+          </div>
+
+          <!-- Skills Section -->
+          <section class="space-y-6">
+            <div>
+              <h3 class="text-lg font-bold px-1 pb-2 pt-4">Frontend</h3>
+              <ul class="skill-list" data-category="frontend">
+                <li>React</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-bold px-1 pb-2 pt-4">Backend</h3>
+              <ul class="skill-list" data-category="backend">
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-bold px-1 pb-2 pt-4">Tools</h3>
+              <ul class="skill-list" data-category="tools">
+                <li>Git</li>
+                <li>VS Code</li>
+                <li>Postman</li>
+                <li>Figma</li>
+                <li>Jira</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-bold px-1 pb-2 pt-4">Languages</h3>
+              <ul class="skill-list" data-category="languages">
+                <li>Python</li>
+                <li>C++</li>
+                <li>Java</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
-
