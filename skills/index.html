@@ -12,7 +12,22 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
   <body class="bg-[#1a1a1a] text-white font-sans" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
-    <div class="max-w-4xl mx-auto px-6 py-10">
+
+    <!-- ✅ NAVBAR -->
+    <header class="bg-[#111] border-b border-[#2a2a2a]">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-xl font-bold tracking-wide">My Portfolio</div>
+        <nav class="space-x-6 text-sm">
+          <a href="#" class="text-[#adadad] hover:text-white transition">Home</a>
+          <a href="#" class="text-[#adadad] hover:text-white transition">Projects</a>
+          <a href="#" class="text-[#adadad] hover:text-white transition">Skills</a>
+          <a href="#" class="text-[#adadad] hover:text-white transition">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ✅ SKILLS SECTION -->
+    <main class="max-w-4xl mx-auto px-6 py-10">
       <h1 class="text-4xl font-bold mb-2">Skills</h1>
       <p class="text-[#adadad] text-base mb-8">A summary of my technical skills and tools I use.</p>
 
@@ -20,10 +35,10 @@
       <section class="mb-8">
         <h2 class="text-xl font-bold mb-3">Frontend</h2>
         <ul class="flex flex-wrap gap-3 p-1">
-          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">React</li>
-          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">HTML</li>
-          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">CSS</li>
-          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">JavaScript</li>
+          <li class="pill">React</li>
+          <li class="pill">HTML</li>
+          <li class="pill">CSS</li>
+          <li class="pill">JavaScript</li>
         </ul>
       </section>
 
@@ -31,9 +46,9 @@
       <section class="mb-8">
         <h2 class="text-xl font-bold mb-3">Backend</h2>
         <ul class="flex flex-wrap gap-3 p-1">
-          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">Node.js</li>
-          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">Express.js</li>
-          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">MongoDB</li>
+          <li class="pill">Node.js</li>
+          <li class="pill">Express.js</li>
+          <li class="pill">MongoDB</li>
         </ul>
       </section>
 
@@ -41,11 +56,11 @@
       <section class="mb-8">
         <h2 class="text-xl font-bold mb-3">Tools</h2>
         <ul class="flex flex-wrap gap-3 p-1">
-          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">Git</li>
-          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">VS Code</li>
-          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">Postman</li>
-          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">Figma</li>
-          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">Jira</li>
+          <li class="pill">Git</li>
+          <li class="pill">VS Code</li>
+          <li class="pill">Postman</li>
+          <li class="pill">Figma</li>
+          <li class="pill">Jira</li>
         </ul>
       </section>
 
@@ -53,11 +68,18 @@
       <section class="mb-8">
         <h2 class="text-xl font-bold mb-3">Languages</h2>
         <ul class="flex flex-wrap gap-3 p-1">
-          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">Python</li>
-          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">C++</li>
-          <li class="text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors">Java</li>
+          <li class="pill">Python</li>
+          <li class="pill">C++</li>
+          <li class="pill">Java</li>
         </ul>
       </section>
-    </div>
+    </main>
+
+    <!-- ✅ TAILWIND SHORTCUT for pill -->
+    <style>
+      .pill {
+        @apply text-sm font-medium px-4 py-1.5 rounded-full bg-[#363636] hover:bg-[#4a4a4a] transition-colors;
+      }
+    </style>
   </body>
 </html>
