@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume - Ishaan Dandekar</title>
   <link rel="stylesheet" href="/css/styles.css" />
+  <style>
+    iframe {
+      width: 100%;
+      height: 90vh;
+      border: none;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--accent, #8b5cf6);
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -16,9 +30,17 @@
       <li><a href="/skills/">Skills</a></li>
     </ul>
   </nav>
+
   <main>
     <h2>Resume</h2>
-    <p>Download or view my resume <a href="https://drive.google.com/file/d/1zothynCtFPzD7eLsch5PYaf2UKTvFHc2/view?usp=sharing" style="color: lightblue;">here</a>.</p>
+
+    <!-- PDF Display -->
+    <iframe src="resume/ishaan-resume.pdf" title="Resume PDF"></iframe>
+
+    <!-- Download Button -->
+    <p>
+      <a class="download-btn" href="resume/Ishaan_Dandekar_Resume.pdf" download>Download PDF</a>
+    </p>
   </main>
 </body>
 </html>
