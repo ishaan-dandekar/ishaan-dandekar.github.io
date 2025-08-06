@@ -90,12 +90,13 @@ p {
 }
 
 .project-desc {
-  display: block;
+  display: block; /* this is the key fix */
+  margin-top: 0.3rem;
   font-size: 0.95rem;
-  color: #ccc; /* light gray for dark background */
-  margin-top: 0.2rem;
-  line-height: 1.5;
+  color: #ccc;
+  line-height: 1.4;
 }
+
 
 @media (max-width: 768px) {
   nav {
