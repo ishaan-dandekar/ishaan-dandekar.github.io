@@ -1,17 +1,29 @@
+/* ====== Base Styling ====== */
+:root {
+  --bg: #1a1a1a;
+  --fg: #ffffff;
+  --accent: #a78bfa;
+  --text-muted: #adadad;
+  --chip-bg: #2e2e2e;
+  --chip-hover: #3b3b3b;
+  --border: #363636;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #1a1a1a;
-  color: #ffffff;
+  background-color: var(--bg);
+  color: var(--fg);
 }
 
+/* ====== Navbar ====== */
 nav {
   background-color: #121212;
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #363636;
+  border-bottom: 1px solid var(--border);
 }
 
 nav h1 {
@@ -32,8 +44,14 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.2s ease;
 }
 
+nav ul li a:hover {
+  color: var(--accent);
+}
+
+/* ====== Main Content ====== */
 main {
   padding: 40px;
   max-width: 960px;
@@ -46,13 +64,14 @@ h2 {
 }
 
 p {
-  color: #adadad;
+  color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
-/* --- Shared List Style for Skills and Tools --- */
-.skill-list, .tool-list {
+/* ====== Skills and Tools (Pills) ====== */
+.skill-list,
+.tool-list {
   list-style: none;
   padding: 0;
   display: flex;
@@ -61,15 +80,22 @@ p {
   margin-top: 10px;
 }
 
-.skill-list li, .tool-list li {
-  background-color: #363636;
+.skill-list li,
+.tool-list li {
+  background-color: var(--chip-bg);
   padding: 6px 14px;
   border-radius: 9999px;
   font-size: 0.875rem;
   font-weight: 500;
+  transition: background-color 0.2s ease;
 }
 
-/* --- Project List Specific --- */
+.skill-list li:hover,
+.tool-list li:hover {
+  background-color: var(--chip-hover);
+}
+
+/* ====== Project List Format ====== */
 .project-list {
   list-style: none;
   padding: 0;
@@ -84,9 +110,10 @@ p {
   display: block;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #a78bfa;
+  color: var(--accent);
   text-decoration: none;
   margin-bottom: 0.3rem;
+  transition: text-decoration 0.2s ease;
 }
 
 .project-title:hover {
@@ -98,9 +125,10 @@ p {
   font-size: 0.95rem;
   color: #ccc;
   line-height: 1.5;
+  margin-top: 0.3rem;
 }
 
-/* --- Responsive Navbar --- */
+/* ====== Responsive ====== */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
