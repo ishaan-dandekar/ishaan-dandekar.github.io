@@ -148,22 +148,35 @@ p {
   text-align: center;
 }
 
+#contact h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #fefefe;
+}
+
 .contact-links {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
-.contact-links li a {
-  color: var(--accent, #8b5cf6);
+.contact-links li {
+  display: inline-block;
+}
+
+.contact-links a {
+  color: #8b5cf6; /* violet */
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s, transform 0.3s;
+  font-size: 1.1em;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.contact-links li a:hover {
-  color: #a78bfa; /* lighter purple */
+.contact-links a:hover {
+  color: #a78bfa; /* lighter violet */
   transform: scale(1.05);
 }
+
