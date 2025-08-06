@@ -67,6 +67,35 @@ p {
   font-size: 0.875rem;
   font-weight: 500;
 }
+.tool-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tool-list li {
+  margin-bottom: 1.5rem;
+}
+
+.project-title {
+  display: inline-block;
+  font-weight: 600;
+  color: #a78bfa; /* example: soft purple */
+  text-decoration: none;
+  margin-bottom: 0.2rem;
+}
+
+.project-title:hover {
+  text-decoration: underline;
+}
+
+.project-desc {
+  display: block;
+  font-size: 0.95rem;
+  color: #ccc; /* light gray for dark background */
+  margin-top: 0.2rem;
+  line-height: 1.5;
+}
 
 @media (max-width: 768px) {
   nav {
