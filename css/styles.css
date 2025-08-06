@@ -101,6 +101,36 @@ p {
 .tool-list li {
   margin-bottom: 1.5rem;
 }
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.project-list li {
+  margin-bottom: 2rem;
+}
+
+.project-title {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #a78bfa;
+  text-decoration: none;
+  margin-bottom: 0.3rem;
+}
+
+.project-title:hover {
+  text-decoration: underline;
+}
+
+.project-desc {
+  display: block;
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
